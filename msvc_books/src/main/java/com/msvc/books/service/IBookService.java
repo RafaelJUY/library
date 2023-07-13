@@ -6,12 +6,12 @@ import java.util.List;
 import java.util.Optional;
 
 public interface IBookService {
-    Optional<BookEnt> findById(Integer id);
-    List<BookEnt> findAll();
+    Optional<BookEnt> findById(Integer id) throws Exception;
+    List<BookEnt> findAll() throws Exception;
 
-    void deleteById(Integer id);
+    void deleteById(Integer id) throws Exception;
 
-    BookEnt save(BookEnt bookEnt);
+    BookEnt save(BookEnt bookEnt) throws Exception;
 
-    boolean existsById(Integer id);
+    boolean existsById(Integer id) throws Exception;
 }

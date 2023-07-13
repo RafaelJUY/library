@@ -6,11 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="053a3b23-1f47-4533-93e1-2647f4c279ce" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/msvc_books/src/main/java/com/msvc/books/controller/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/msvc_books/src/main/java/com/msvc/books/controller/BookController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/msvc_books/src/main/java/com/msvc/books/service/IBookService.java" beforeDir="false" afterPath="$PROJECT_DIR$/msvc_books/src/main/java/com/msvc/books/service/IBookService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/msvc_books/src/main/java/com/msvc/books/service/convert/entityToDto/IBookConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/msvc_books/src/main/java/com/msvc/books/service/convert/entityToDto/IBookConverter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/msvc_books/src/main/java/com/msvc/books/service/impl/BookServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/msvc_books/src/main/java/com/msvc/books/service/impl/BookServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/msvc_books/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/msvc_books/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msvc_books/src/main/java/com/msvc/books/dto/AuthorDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/msvc_books/src/main/java/com/msvc/books/dto/AuthorDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msvc_books/src/main/java/com/msvc/books/model/entity/AuthorEnt.java" beforeDir="false" afterPath="$PROJECT_DIR$/msvc_books/src/main/java/com/msvc/books/model/entity/AuthorEnt.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,8 +17,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -82,7 +79,7 @@
       <updated>1689141770480</updated>
       <workItem from="1689141771634" duration="753000" />
       <workItem from="1689142534731" duration="15143000" />
-      <workItem from="1689223038831" duration="5929000" />
+      <workItem from="1689223038831" duration="14467000" />
     </task>
     <servers />
   </component>

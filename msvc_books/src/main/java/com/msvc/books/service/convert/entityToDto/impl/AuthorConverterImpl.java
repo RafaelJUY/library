@@ -2,7 +2,7 @@ package com.msvc.books.service.convert.entityToDto.impl;
 
 import com.msvc.books.dto.AuthorDto;
 import com.msvc.books.model.entity.AuthorEnt;
-import com.msvc.books.service.convert.entityToDto.IAuthoConverter;
+import com.msvc.books.service.convert.entityToDto.IAuthorConverter;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Primary;
@@ -10,7 +10,7 @@ import org.springframework.stereotype.Service;
 
 @Service
 @Primary
-public class AuthorConverterImpl implements IAuthoConverter<AuthorEnt, AuthorDto> {
+public class AuthorConverterImpl implements IAuthorConverter<AuthorEnt, AuthorDto> {
 
 
     @Autowired

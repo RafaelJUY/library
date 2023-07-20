@@ -5,6 +5,8 @@ import com.msvc.books.repository.IBookRepository;
 import com.msvc.books.repository.IGenericRepository;
 import com.msvc.books.service.IBookService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -24,5 +26,10 @@ public class BookServiceImpl implements IGenericCrudImpl<BookEnt, Integer>, IBoo
     @Override
     public List<BookEnt> findByTitle(String title) {
         return repository.findByTitleContainsIgnoreCase(title);
+    }
+
+    @Override
+    public Page<BookEnt> findAllPage(Pageable pageable) {
+        return repository.findAll(pageable);
     }
 }

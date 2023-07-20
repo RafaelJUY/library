@@ -13,6 +13,9 @@ import com.msvc.books.service.IBookService;
 import com.msvc.books.service.convert.entityToDto.IAuthorConverter;
 import com.msvc.books.service.convert.entityToDto.IBookConverter;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageImpl;
+import org.springframework.data.domain.PageRequest;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -62,8 +65,23 @@ public class BookController {
         return ResponseEntity.ok(findAuthors(bookService.findByTitle(title)));
     }
 
+    @GetMapping
+    public ResponseEntity<List<BookDto>> findAll() throws Exception {
+        return ResponseEntity.ok(findAuthors(bookService.findAll()));
+    }
 
-    //Para justificar mas este metodo crear un metodo para buscar libros por titulo.
+    @GetMapping("/pagination")
+    public ResponseEntity<List<BookDto>> findAllPage(
+            @RequestParam(name = "page", defaultValue = "0") int page,
+            @RequestParam(name = "size", defaultValue = "5") int size) throws Exception {
+        PageRequest pageRequest = PageRequest.of(page, size);
+        List<BookEnt> bookEntList = bookService.findAllPage(pageRequest).get().collect(Collectors.toList());
+        List<BookDto> bookDtoList = findAuthors(bookEntList);
+
+
+        return ResponseEntity.ok(bookDtoList);
+    }
+
     private List<BookDto> findAuthors(List<BookEnt> bookEntList){
         return bookEntList.stream()
                 .map(bookEnt -> {
@@ -76,10 +94,6 @@ public class BookController {
         return bookAuthorService.findAuthors(bookEnt);
     }
 
-    @GetMapping
-    public ResponseEntity<List<BookDto>> findAll() throws Exception {
-        return ResponseEntity.ok(findAuthors(bookService.findAll()));
-    }
 
     @PostMapping
     public ResponseEntity<BookDto> save(@RequestBody BookDto bookDto) throws Exception {

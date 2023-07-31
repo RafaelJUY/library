@@ -8,13 +8,16 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/msvc_books/src/main/java/com/msvc/books/controller/AuthorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/msvc_books/src/main/java/com/msvc/books/controller/AuthorController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/msvc_books/src/main/java/com/msvc/books/controller/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/msvc_books/src/main/java/com/msvc/books/controller/BookController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/msvc_books/src/main/java/com/msvc/books/service/convert/entityToDto/AuthorConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/msvc_books/src/main/java/com/msvc/books/service/convert/entityToDto/AuthorConverter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/msvc_books/src/main/java/com/msvc/books/service/convert/entityToDto/BookConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/msvc_books/src/main/java/com/msvc/books/service/convert/entityToDto/BookConverter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/msvc_books/src/main/java/com/msvc/books/service/convert/entityToDto/IAuthorConverter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/msvc_books/src/main/java/com/msvc/books/service/convert/entityToDto/IBookConverter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/msvc_books/src/main/java/com/msvc/books/service/convert/entityToDto/IGenericConverter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/msvc_books/src/main/java/com/msvc/books/service/convert/entityToDto/impl/AuthorConverterImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/msvc_books/src/main/java/com/msvc/books/service/convert/entityToDto/impl/BookConverterImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/msvc_books/src/main/java/com/msvc/books/dto/AuthorDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/msvc_books/src/main/java/com/msvc/books/dto/AuthorDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msvc_books/src/main/java/com/msvc/books/dto/BookDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/msvc_books/src/main/java/com/msvc/books/dto/BookDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msvc_books/src/main/java/com/msvc/books/exception/GlobalErrorHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/msvc_books/src/main/java/com/msvc/books/exception/GlobalErrorHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msvc_books/src/main/java/com/msvc/books/model/entity/AuthorEnt.java" beforeDir="false" afterPath="$PROJECT_DIR$/msvc_books/src/main/java/com/msvc/books/model/entity/AuthorEnt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msvc_books/src/main/java/com/msvc/books/model/entity/BookEnt.java" beforeDir="false" afterPath="$PROJECT_DIR$/msvc_books/src/main/java/com/msvc/books/model/entity/BookEnt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msvc_books/src/main/java/com/msvc/books/service/IAuthorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/msvc_books/src/main/java/com/msvc/books/service/IAuthorService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msvc_books/src/main/java/com/msvc/books/service/IBookAuthorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/msvc_books/src/main/java/com/msvc/books/service/IBookAuthorService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msvc_books/src/main/java/com/msvc/books/service/IBookService.java" beforeDir="false" afterPath="$PROJECT_DIR$/msvc_books/src/main/java/com/msvc/books/service/IBookService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msvc_books/src/main/java/com/msvc/books/service/IGenericCRUD.java" beforeDir="false" afterPath="$PROJECT_DIR$/msvc_books/src/main/java/com/msvc/books/service/IGenericCRUD.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msvc_books/src/main/java/com/msvc/books/service/impl/IGenericCrudImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/msvc_books/src/main/java/com/msvc/books/service/impl/IGenericCrudImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,7 +105,7 @@
       <workItem from="1689817031758" duration="632000" />
       <workItem from="1690542915237" duration="714000" />
       <workItem from="1690699139575" duration="1894000" />
-      <workItem from="1690774409685" duration="5175000" />
+      <workItem from="1690774409685" duration="17172000" />
     </task>
     <servers />
   </component>

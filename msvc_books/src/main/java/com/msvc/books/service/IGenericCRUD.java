@@ -3,13 +3,12 @@ package com.msvc.books.service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
-import java.util.Optional;
 
 public interface IGenericCRUD<T, ID> {
     @Transactional(readOnly = true)
-    Optional<T> findById(ID id) throws Exception;
+    T findById(ID id) throws Exception;
 
-    @Transactional
+    @Transactional(readOnly = true)
     List<T> findAll() throws Exception;
 
     @Transactional

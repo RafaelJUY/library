@@ -6,9 +6,15 @@
   <component name="ChangeListManager">
     <list default="true" id="053a3b23-1f47-4533-93e1-2647f4c279ce" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msvc_books/src/main/java/com/msvc/books/controller/AuthorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/msvc_books/src/main/java/com/msvc/books/controller/AuthorController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/msvc_books/src/main/java/com/msvc/books/controller/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/msvc_books/src/main/java/com/msvc/books/controller/BookController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/msvc_books/src/main/java/com/msvc/books/service/IBookService.java" beforeDir="false" afterPath="$PROJECT_DIR$/msvc_books/src/main/java/com/msvc/books/service/IBookService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/msvc_books/src/main/java/com/msvc/books/service/impl/BookServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/msvc_books/src/main/java/com/msvc/books/service/impl/BookServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msvc_books/src/main/java/com/msvc/books/service/convert/entityToDto/AuthorConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/msvc_books/src/main/java/com/msvc/books/service/convert/entityToDto/AuthorConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msvc_books/src/main/java/com/msvc/books/service/convert/entityToDto/BookConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/msvc_books/src/main/java/com/msvc/books/service/convert/entityToDto/BookConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msvc_books/src/main/java/com/msvc/books/service/convert/entityToDto/IAuthorConverter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/msvc_books/src/main/java/com/msvc/books/service/convert/entityToDto/IBookConverter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/msvc_books/src/main/java/com/msvc/books/service/convert/entityToDto/IGenericConverter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/msvc_books/src/main/java/com/msvc/books/service/convert/entityToDto/impl/AuthorConverterImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/msvc_books/src/main/java/com/msvc/books/service/convert/entityToDto/impl/BookConverterImpl.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,6 +99,10 @@
       <workItem from="1689641966905" duration="4567000" />
       <workItem from="1689737321966" duration="19000" />
       <workItem from="1689738698817" duration="1354000" />
+      <workItem from="1689817031758" duration="632000" />
+      <workItem from="1690542915237" duration="714000" />
+      <workItem from="1690699139575" duration="1894000" />
+      <workItem from="1690774409685" duration="5175000" />
     </task>
     <servers />
   </component>

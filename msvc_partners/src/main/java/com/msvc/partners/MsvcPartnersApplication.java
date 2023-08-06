@@ -1,0 +1,13 @@
+package com.msvc.partners;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class MsvcPartnersApplication {
+
+    public static void main(String[] args) {
+        SpringApplication.run(MsvcPartnersApplication.class, args);
+    }
+
+}

@@ -5,11 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="053a3b23-1f47-4533-93e1-2647f4c279ce" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/msvc_books/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/msvc_books/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/msvc_books/src/main/java/com/msvc/books/controller/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/msvc_books/src/main/java/com/msvc/books/controller/BookController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/msvc_books/src/main/java/com/msvc/books/service/impl/AuthorServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/msvc_books/src/main/java/com/msvc/books/service/impl/AuthorServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/msvc_books/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/msvc_books/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +75,7 @@
       <recent name="com.msvc.books.controller" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.MsvcBooksApplication">
+  <component name="RunManager" selected="Spring Boot.MsvcPartnersApplication">
     <configuration name="All in msvc_books (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="msvc_books" />
       <option name="PACKAGE_NAME" value="" />
@@ -136,6 +134,13 @@
     <configuration name="MsvcBooksApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="msvc_books" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.msvc.books.MsvcBooksApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MsvcPartnersApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="msvc_partners" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.msvc.partners.MsvcPartnersApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>

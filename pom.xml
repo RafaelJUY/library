@@ -18,6 +18,7 @@
 
     <modules>
         <module>msvc_books</module>
+        <module>msvc_partners</module>
     </modules>
 
     <properties>

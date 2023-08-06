@@ -51,12 +51,18 @@ public class BookController {
         if(title.isEmpty() || title.isBlank()){
             throw new Exception("invalid title value");
         }
-        return ResponseEntity.ok(findAuthors(bookService.findByTitle(title)));
+
+        List<BookEnt> books = bookService.findByTitle(title);
+        if (books.isEmpty()){
+            throw new ModelNotFoundException("book/s not found");
+        }
+        return ResponseEntity.ok(findAuthors(books));
     }
 
     @GetMapping
     public ResponseEntity<List<BookDto>> findAll() throws Exception {
-        return ResponseEntity.ok(findAuthors(bookService.findAll()));
+        //return ResponseEntity.ok(findAuthors(bookService.findAll()));
+        return ResponseEntity.ok(entityListToDtoList(bookService.findAll()));
     }
 
     @GetMapping("/pagination")
@@ -98,9 +104,9 @@ public class BookController {
     @PutMapping("assign-authors/{id-book}")
     public ResponseEntity<Void> assignAuthors(@PathVariable(name = "id-book") Integer idBook,
                                               @RequestParam List<Integer> idsAuthors) throws Exception{
-        if (!(bookService.existsById(idBook) && checkAuthorsByIds(idsAuthors))){
-            throw new ModelNotFoundException("book and/or authors do not exist");
-        }
+//        if (!(bookService.existsById(idBook) && checkAuthorsByIds(idsAuthors))){
+//            throw new ModelNotFoundException("book and/or authors do not exist");
+//        }
 
         BookEnt bookEnt = bookService.findById(idBook);
         List<AuthorEnt> authorEntList = authorService.findAllById(idsAuthors);
@@ -130,10 +136,12 @@ public class BookController {
 
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> deleteById(@PathVariable Integer id) throws Exception {
-        if (!bookService.existsById(id)) {
-            throw new ModelNotFoundException("ID NOT FOUND ".concat(id.toString()));
-        }
+//        if (!bookService.existsById(id)) {
+//            throw new ModelNotFoundException("ID NOT FOUNDdddddd ".concat(id.toString()));
+//        }
+
         BookEnt bookEnt = bookService.findById(id);
+
         List<AuthorEnt> authorEntList = bookAuthorService.findAuthors(bookEnt);
 
         authorEntList
@@ -147,8 +155,8 @@ public class BookController {
     public ResponseEntity<Void> unassignAuthors(@PathVariable(name = "id-book") Integer idBook,
                                                 @PathVariable(name = "id-author") Integer idAuthor) throws Exception{
 
-        BookAuthor bookAuthor = bookAuthorService.
-                findById(new BookAuthorPK(authorService.findById(idAuthor), bookService.findById(idBook)));
+        BookAuthor bookAuthor = bookAuthorService
+                .findById(new BookAuthorPK(authorService.findById(idAuthor), bookService.findById(idBook)));
         bookAuthorService.delete(bookAuthor);
 
         return ResponseEntity.ok().build();

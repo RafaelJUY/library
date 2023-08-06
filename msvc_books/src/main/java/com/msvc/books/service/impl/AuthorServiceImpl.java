@@ -1,5 +1,6 @@
 package com.msvc.books.service.impl;
 
+import com.msvc.books.exception.ModelNotFoundException;
 import com.msvc.books.model.entity.AuthorEnt;
 import com.msvc.books.repository.IAuthorRepository;
 import com.msvc.books.repository.IGenericRepository;
@@ -33,8 +34,17 @@ public class AuthorServiceImpl implements IGenericCrudImpl<AuthorEnt, Integer>, 
         return exists;
     }
 
+//    @Override
+//    public List<AuthorEnt> findAllById(List<Integer> ids) {
+//        return repository.findAllById(ids);
+//    }
     @Override
-    public List<AuthorEnt> findAllById(List<Integer> ids) {
-        return repository.findAllById(ids);
+    public List<AuthorEnt> findAllById(List<Integer> ids) throws ModelNotFoundException{
+        List<AuthorEnt> authorEntList = repository.findAllById(ids);
+        if (authorEntList.size() != ids.size()){
+            throw new ModelNotFoundException("Some author id was not found");
+        }
+
+        return authorEntList;
     }
 }

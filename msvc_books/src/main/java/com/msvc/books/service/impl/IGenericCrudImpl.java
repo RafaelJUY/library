@@ -1,18 +1,20 @@
 package com.msvc.books.service.impl;
 
+import com.msvc.books.exception.ModelNotFoundException;
 import com.msvc.books.repository.IGenericRepository;
 import com.msvc.books.service.IGenericCRUD;
 
 import java.util.List;
-import java.util.Optional;
 
 public interface IGenericCrudImpl<T, ID> extends IGenericCRUD<T, ID> {
 
     IGenericRepository<T, ID> getRepository();
 
     @Override
-    default Optional<T> findById(ID id) throws Exception {
-        return getRepository().findById(id);
+    default T findById(ID id) throws Exception {
+        return getRepository()
+                .findById(id)
+                .orElseThrow(() -> new ModelNotFoundException("ID NOT FOUND " + id));
     }
 
     @Override

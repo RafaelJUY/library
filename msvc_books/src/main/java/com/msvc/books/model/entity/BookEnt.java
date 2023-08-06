@@ -16,6 +16,7 @@ public class BookEnt {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @EqualsAndHashCode.Include
     private Integer idBook;
+    @Column(length = 150, nullable = false)
     private String title;
     private Byte quantity;
 }

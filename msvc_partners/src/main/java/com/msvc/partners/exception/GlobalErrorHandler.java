@@ -38,6 +38,14 @@ public class GlobalErrorHandler extends ResponseEntityExceptionHandler {
         return ResponseEntity.status(HttpStatus.CONFLICT).body(errorResponse);
     }
 
+    @ExceptionHandler(LendBookException.class)
+    public ResponseEntity<ErrorResponse> handlerLendBookException(LendBookException ex, WebRequest request){
+        ErrorResponse errorResponse = new ErrorResponse(LocalDateTime.now(), ex.getMessage(),
+                request.getDescription(false));
+
+        return ResponseEntity.status(HttpStatus.CONFLICT).body(errorResponse);
+    }
+
     @Override
     protected ResponseEntity<Object> handleNoHandlerFoundException(NoHandlerFoundException ex, HttpHeaders headers,
                                                                    HttpStatusCode status, WebRequest request) {

@@ -27,7 +27,7 @@ public class PartnerEnt {
     private String lastName;
     @Column(length = 100, nullable = false)
     private String email;
-    @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.LAZY)
+    @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
     @JoinColumn(name = "id_partner")
     private List<LoanEnt> loans = new ArrayList<>();
     @Transient

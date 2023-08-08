@@ -64,4 +64,10 @@ public class PartnerController {
 
         return ResponseEntity.notFound().build();
     }
+
+    @PutMapping("/register-loan-return/{idPartner}/{idBook}")
+    public ResponseEntity<Book> registerLoanReturn(@PathVariable Integer idPartner, @PathVariable Integer idBook) throws Exception{
+        partnerService.registerLoanReturn(idBook, idPartner);
+        return ResponseEntity.ok().build();
+    }
 }

@@ -47,6 +47,6 @@ public class BookServiceImpl implements IGenericCrudImpl<BookEnt, Integer>, IBoo
     public BookEnt returnBookLoan(Integer id) throws Exception{
         BookEnt bookEnt = this.findById(id);
         bookEnt.returnUnity();
-        return this.save(bookEnt);
+        return repository.save(bookEnt);
     }
 }

@@ -1,7 +1,13 @@
 package com.msvc.partners.dto;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.msvc.partners.model.Book;
+import com.msvc.partners.model.entity.LoanEnt;
 import jakarta.validation.constraints.*;
 import lombok.*;
+
+import java.util.ArrayList;
+import java.util.List;
 
 @Setter
 @Getter
@@ -27,4 +33,8 @@ public class PartnerDto {
     @NotBlank
     @NotEmpty
     private String email;
+
+    private List<LoanEnt> loans = new ArrayList<>();
+
+    private List<Book> books = new ArrayList<>();
 }

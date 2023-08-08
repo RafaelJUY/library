@@ -6,7 +6,14 @@
   <component name="ChangeListManager">
     <list default="true" id="053a3b23-1f47-4533-93e1-2647f4c279ce" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/msvc_partners/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/msvc_partners/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msvc_books/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/msvc_books/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msvc_partners/src/main/java/com/msvc/partners/MsvcPartnersApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/msvc_partners/src/main/java/com/msvc/partners/MsvcPartnersApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msvc_partners/src/main/java/com/msvc/partners/controller/PartnerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/msvc_partners/src/main/java/com/msvc/partners/controller/PartnerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msvc_partners/src/main/java/com/msvc/partners/dto/PartnerDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/msvc_partners/src/main/java/com/msvc/partners/dto/PartnerDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msvc_partners/src/main/java/com/msvc/partners/exception/GlobalErrorHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/msvc_partners/src/main/java/com/msvc/partners/exception/GlobalErrorHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msvc_partners/src/main/java/com/msvc/partners/model/entity/PartnerEnt.java" beforeDir="false" afterPath="$PROJECT_DIR$/msvc_partners/src/main/java/com/msvc/partners/model/entity/PartnerEnt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msvc_partners/src/main/java/com/msvc/partners/service/IPartnerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/msvc_partners/src/main/java/com/msvc/partners/service/IPartnerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msvc_partners/src/main/java/com/msvc/partners/service/impl/PartnerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/msvc_partners/src/main/java/com/msvc/partners/service/impl/PartnerServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,8 +24,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JUnit5 Test Class" />
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -62,7 +69,7 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "spring.configuration.checksum": "83902f00e513f4922e8e575c0f55fc31",
+    "spring.configuration.checksum": "3dee5229e07f207f7301796a944ca3e6",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -183,6 +190,7 @@
       <workItem from="1690851836793" duration="27748000" />
       <workItem from="1691122259513" duration="21784000" />
       <workItem from="1691293172453" duration="320000" />
+      <workItem from="1691393106113" duration="12326000" />
     </task>
     <servers />
   </component>

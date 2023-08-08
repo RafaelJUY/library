@@ -101,11 +101,6 @@ class BookControllerTest {
     }
 
     @Test
-    @Disabled
-    void findAllPage() {
-    }
-
-    @Test
     void save() throws JsonProcessingException, Exception {
         //Given
         BookEnt bookEnt = new BookEnt(null, "title_4", (byte)40);
@@ -172,11 +167,6 @@ class BookControllerTest {
 
         Mockito.verify(bookService).existsById(1);
         Mockito.verify(bookService).save(Mockito.any(BookEnt.class));
-    }
-
-    @Test
-    @Disabled
-    void deleteById() {
     }
 
     @Test

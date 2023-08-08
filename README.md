@@ -3,16 +3,23 @@
 
 Se compone de dos microservicios:
 - msvc_books: API REST para gestionar libros y sus autores.
-- msvc_partners: API REST con socios y prestamos/devolucion de libros.
+- msvc_partners: API REST con socios y prestamos/devolución de libros.
 
-La comunicacion se realiza con openfeign desde msvc_partners a msvc_books.
+La comunicación se realiza con openfeign desde msvc_partners a msvc_books.
 
 ### En el proyecto se usa
 - Java 17
 - Spring Boot 3
 - Spring Data JPA
 - Base de datos MySQL y H2 para test
-- Swagger: endpoint http://localhost:8001/swagger-ui/index.html
+- Documentacion con Swagger: endpoint http://localhost:8001/swagger-ui/index.html
 - Pruebas Unitarias con JUnit5 y Mockit (de momento solo en msvc_books para repository, service y controller).
 - Lombok
 - Maven
+- DTO
+- Manejo de excepciones globales: paquete exception
+- Programacion Funcional, API Stream, lambda
+- Genericos: IGenericCRUD, IGenericCRUDImpl, IGenericRepository.
+
+### Nota
+El proyecto se sigue mejorando.

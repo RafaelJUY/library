@@ -6,14 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="053a3b23-1f47-4533-93e1-2647f4c279ce" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/msvc_books/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/msvc_books/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/msvc_partners/src/main/java/com/msvc/partners/MsvcPartnersApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/msvc_partners/src/main/java/com/msvc/partners/MsvcPartnersApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/msvc_partners/src/main/java/com/msvc/partners/controller/PartnerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/msvc_partners/src/main/java/com/msvc/partners/controller/PartnerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/msvc_partners/src/main/java/com/msvc/partners/dto/PartnerDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/msvc_partners/src/main/java/com/msvc/partners/dto/PartnerDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/msvc_partners/src/main/java/com/msvc/partners/exception/GlobalErrorHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/msvc_partners/src/main/java/com/msvc/partners/exception/GlobalErrorHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/msvc_partners/src/main/java/com/msvc/partners/model/entity/PartnerEnt.java" beforeDir="false" afterPath="$PROJECT_DIR$/msvc_partners/src/main/java/com/msvc/partners/model/entity/PartnerEnt.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/msvc_partners/src/main/java/com/msvc/partners/service/IPartnerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/msvc_partners/src/main/java/com/msvc/partners/service/IPartnerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/msvc_partners/src/main/java/com/msvc/partners/service/impl/PartnerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/msvc_partners/src/main/java/com/msvc/partners/service/impl/PartnerServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msvc_books/src/main/java/com/msvc/books/controller/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/msvc_books/src/main/java/com/msvc/books/controller/BookController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msvc_books/src/main/java/com/msvc/books/exception/GlobalErrorHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/msvc_books/src/main/java/com/msvc/books/exception/GlobalErrorHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msvc_books/src/main/java/com/msvc/books/model/entity/BookEnt.java" beforeDir="false" afterPath="$PROJECT_DIR$/msvc_books/src/main/java/com/msvc/books/model/entity/BookEnt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msvc_books/src/main/java/com/msvc/books/service/IBookService.java" beforeDir="false" afterPath="$PROJECT_DIR$/msvc_books/src/main/java/com/msvc/books/service/IBookService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msvc_books/src/main/java/com/msvc/books/service/impl/BookServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/msvc_books/src/main/java/com/msvc/books/service/impl/BookServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,8 +21,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JUnit5 Test Class" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -53,26 +50,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "last_opened_file_path": "C:/Users/Rafael/Desktop/Proyect_Backend/library/msvc_partners/src/main/java/com/msvc/partners/exception",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "spring.configuration.checksum": "3dee5229e07f207f7301796a944ca3e6",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Rafael/Desktop/Proyect_Backend/library/msvc_partners/src/main/java/com/msvc/partners/exception&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;3dee5229e07f207f7301796a944ca3e6&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Rafael\Desktop\Proyect_Backend\library\msvc_partners\src\main\java\com\msvc\partners\exception" />
@@ -84,7 +81,7 @@
       <recent name="com.msvc.books.controller" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.MsvcPartnersApplication">
+  <component name="RunManager" selected="Spring Boot.MsvcBooksApplication">
     <configuration name="All in msvc_books (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="msvc_books" />
       <option name="PACKAGE_NAME" value="" />

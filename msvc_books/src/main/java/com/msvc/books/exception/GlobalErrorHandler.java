@@ -35,6 +35,12 @@ public class GlobalErrorHandler extends ResponseEntityExceptionHandler {
                                                                                WebRequest request){
         ErrorResponse errorResponse = new ErrorResponse(LocalDateTime.now(), ex.getMessage(),
                 request.getDescription(false));
+        return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(errorResponse);
+    }
+
+    @ExceptionHandler(BookOutOfStockException.class)
+    public ResponseEntity<ErrorResponse> handlerBookOutOfStockException(BookOutOfStockException ex, WebRequest request){
+        ErrorResponse errorResponse = new ErrorResponse(LocalDateTime.now(), ex.getMessage(), request.getDescription(false));
         return ResponseEntity.status(HttpStatus.CONFLICT).body(errorResponse);
     }
 

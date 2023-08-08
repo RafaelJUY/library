@@ -12,4 +12,9 @@ public interface IBookService extends IGenericCRUD<BookEnt, Integer>{
     List<BookEnt> findByTitle(String title);
     @Transactional(readOnly = true)
     Page<BookEnt> findAllPage(Pageable pageable);
+    @Transactional
+    BookEnt lendBook(Integer id) throws Exception;
+    @Transactional
+    BookEnt returnBookLoan(Integer id) throws Exception;
+
 }

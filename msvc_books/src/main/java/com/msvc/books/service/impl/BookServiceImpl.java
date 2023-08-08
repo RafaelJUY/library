@@ -1,5 +1,6 @@
 package com.msvc.books.service.impl;
 
+import com.msvc.books.exception.BookOutOfStockException;
 import com.msvc.books.model.entity.BookEnt;
 import com.msvc.books.repository.IBookRepository;
 import com.msvc.books.repository.IGenericRepository;
@@ -31,5 +32,21 @@ public class BookServiceImpl implements IGenericCrudImpl<BookEnt, Integer>, IBoo
     @Override
     public Page<BookEnt> findAllPage(Pageable pageable) {
         return repository.findAll(pageable);
+    }
+
+    @Override
+    public BookEnt lendBook(Integer id) throws Exception{
+        BookEnt bookEnt = this.findById(id);
+        if (!(bookEnt.lendUnity())){
+            throw new BookOutOfStockException("No stock book id: " + id);
+        }
+        return this.save(bookEnt);
+    }
+
+    @Override
+    public BookEnt returnBookLoan(Integer id) throws Exception{
+        BookEnt bookEnt = this.findById(id);
+        bookEnt.returnUnity();
+        return this.save(bookEnt);
     }
 }

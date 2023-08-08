@@ -5,8 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="053a3b23-1f47-4533-93e1-2647f4c279ce" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msvc_partners/src/main/java/com/msvc/partners/clients/IBookClientRest.java" beforeDir="false" afterPath="$PROJECT_DIR$/msvc_partners/src/main/java/com/msvc/partners/clients/IBookClientRest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msvc_partners/src/main/java/com/msvc/partners/exception/GlobalErrorHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/msvc_partners/src/main/java/com/msvc/partners/exception/GlobalErrorHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msvc_partners/src/main/java/com/msvc/partners/repository/IPartnerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/msvc_partners/src/main/java/com/msvc/partners/repository/IPartnerRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msvc_partners/src/main/java/com/msvc/partners/service/IPartnerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/msvc_partners/src/main/java/com/msvc/partners/service/IPartnerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msvc_partners/src/main/java/com/msvc/partners/service/impl/PartnerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/msvc_partners/src/main/java/com/msvc/partners/service/impl/PartnerServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -184,7 +188,7 @@
       <workItem from="1691122259513" duration="21784000" />
       <workItem from="1691293172453" duration="320000" />
       <workItem from="1691393106113" duration="12326000" />
-      <workItem from="1691505259461" duration="1644000" />
+      <workItem from="1691505259461" duration="3336000" />
     </task>
     <servers />
   </component>

@@ -51,22 +51,6 @@ public class PartnerServiceImpl implements IPartnerService {
         return Optional.empty();
     }
 
-//    @Override
-//    public Optional<Book> registerLoanReturn(Integer idBook, Integer idPartner) {
-//        Optional<PartnerEnt> partnerOp = repository.findById(idPartner);
-//        if(partnerOp.isPresent()){
-//            LoanEnt loanList = this.getLoansNotReturnedByBookAndPartner(idBook, idPartner);
-//            if (loanList != null){
-//                Book bookMsvc = client.returnBookLoan(idBook);
-//                repository.registerDateOfReturn(LocalDateTime.now(), idBook, idPartner);
-//                return Optional.of(bookMsvc);
-//            }else {
-//                throw new ModelNotFoundException("The partner does not have the book borrowed.");
-//            }
-//        }
-//
-//        return Optional.empty();
-//    }
     @Override
     public void registerLoanReturn(Integer idBook, Integer idPartner) throws Exception{
         Optional<PartnerEnt> partnerOp = repository.findById(idPartner);
@@ -93,9 +77,4 @@ public class PartnerServiceImpl implements IPartnerService {
 
     }
 
-
-//    @Override
-//    public LoanEnt getLoansNotReturnedByBookAndPartner(Integer idBook, Integer idPartner) {
-//        return (LoanEnt) repository.getLoansByBookAndPartner(idBook, idPartner);
-//    }
 }

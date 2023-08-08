@@ -13,7 +13,4 @@ public interface IPartnerService extends IGenericCRUDImpl<PartnerEnt, Integer> {
     Optional<Book> registerLoan(Integer idBook, Integer idPartner);
     @Transactional
     void registerLoanReturn(Integer idBook, Integer idPartner) throws Exception;
-
-//    @Transactional(readOnly = true)
-//    LoanEnt getLoansNotReturnedByBookAndPartner(Integer idBook, Integer idPartner);
 }

@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="053a3b23-1f47-4533-93e1-2647f4c279ce" name="Changes" comment="" />
+    <list default="true" id="053a3b23-1f47-4533-93e1-2647f4c279ce" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -43,26 +46,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "last_opened_file_path": "C:/Users/Rafael/Desktop/Proyect_Backend/mito-sales",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "spring.configuration.checksum": "3dee5229e07f207f7301796a944ca3e6",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Rafael/Desktop/Proyect_Backend/mito-sales&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;3dee5229e07f207f7301796a944ca3e6&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Rafael\Desktop\Proyect_Backend\library\msvc_partners\src\main\java\com\msvc\partners\exception" />
@@ -74,7 +77,7 @@
       <recent name="com.msvc.books.controller" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.MsvcPartnersApplication">
+  <component name="RunManager" selected="JUnit.All in msvc_books (3)">
     <configuration name="All in msvc_books (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="msvc_books" />
       <option name="PACKAGE_NAME" value="" />
@@ -91,7 +94,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="All in msvc_books" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="All in msvc_books (3)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="msvc_books" />
       <option name="PACKAGE_NAME" value="" />
       <option name="TEST_OBJECT" value="package" />
@@ -146,11 +149,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.All in msvc_books (3)" />
         <item itemvalue="JUnit.All in msvc_books (2)" />
         <item itemvalue="JUnit.All in msvc_books (1)" />
         <item itemvalue="JUnit.BookRepositoryTest" />
         <item itemvalue="JUnit.BookRepositoryTest.deleteTest" />
-        <item itemvalue="JUnit.All in msvc_books" />
       </list>
     </recent_temporary>
   </component>
@@ -181,6 +184,7 @@
       <workItem from="1691122259513" duration="21784000" />
       <workItem from="1691293172453" duration="320000" />
       <workItem from="1691393106113" duration="12326000" />
+      <workItem from="1691505259461" duration="1644000" />
     </task>
     <servers />
   </component>
@@ -191,6 +195,7 @@
     <SUITE FILE_PATH="coverage/library$All_in_msvc_books.ic" NAME="All in msvc_books Coverage Results" MODIFIED="1691151334803" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/library$All_in_msvc_books__1_.ic" NAME="All in msvc_books (1) Coverage Results" MODIFIED="1691157166207" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/library$All_in_library.ic" NAME="All in library Coverage Results" MODIFIED="1690808546500" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/library$All_in_msvc_books__3_.ic" NAME="All in msvc_books (3) Coverage Results" MODIFIED="1691506809617" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/library$All_in_msvc_books__2_.ic" NAME="All in msvc_books (2) Coverage Results" MODIFIED="1691293422482" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

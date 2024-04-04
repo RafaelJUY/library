@@ -6,8 +6,14 @@
   <component name="ChangeListManager">
     <list default="true" id="053a3b23-1f47-4533-93e1-2647f4c279ce" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/msvc_books/src/test/java/com/msvc/books/controller/BookControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/msvc_books/src/test/java/com/msvc/books/controller/BookControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msvc_books/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/msvc_books/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msvc_books/src/main/java/com/msvc/books/controller/AuthorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/msvc_books/src/main/java/com/msvc/books/controller/AuthorController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msvc_books/src/main/java/com/msvc/books/controller/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/msvc_books/src/main/java/com/msvc/books/controller/BookController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msvc_books/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/msvc_books/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msvc_partners/src/main/java/com/msvc/partners/clients/IBookClientRest.java" beforeDir="false" afterPath="$PROJECT_DIR$/msvc_partners/src/main/java/com/msvc/partners/clients/IBookClientRest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msvc_partners/src/main/java/com/msvc/partners/controller/PartnerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/msvc_partners/src/main/java/com/msvc/partners/controller/PartnerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msvc_partners/src/main/java/com/msvc/partners/service/impl/PartnerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/msvc_partners/src/main/java/com/msvc/partners/service/impl/PartnerServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msvc_partners/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/msvc_partners/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,17 +64,23 @@
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Rafael/Desktop/Proyect_Backend/mito-sales&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Rafael/Desktop/Docker_Kubernetes/msvc_books&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;3dee5229e07f207f7301796a944ca3e6&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;ff22cad8a80d7702b24efb05a0f88d75&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Rafael\Desktop\Docker_Kubernetes\msvc_books" />
       <recent name="C:\Users\Rafael\Desktop\Proyect_Backend\library\msvc_partners\src\main\java\com\msvc\partners\exception" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
@@ -78,7 +90,7 @@
       <recent name="com.msvc.books.controller" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.All in msvc_books (3)">
+  <component name="RunManager" selected="Spring Boot.MsvcPartnersApplication">
     <configuration name="All in msvc_books (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="msvc_books" />
       <option name="PACKAGE_NAME" value="" />
@@ -103,33 +115,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BookRepositoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="msvc_books" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.msvc.books.repository.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.msvc.books.repository" />
-      <option name="MAIN_CLASS_NAME" value="com.msvc.books.repository.BookRepositoryTest" />
-      <option name="TEST_OBJECT" value="class" />
+    <configuration name="All in msvc_partners (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="msvc_partners" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BookRepositoryTest.deleteTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="msvc_books" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.msvc.books.repository.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.msvc.books.repository" />
-      <option name="MAIN_CLASS_NAME" value="com.msvc.books.repository.BookRepositoryTest" />
-      <option name="METHOD_NAME" value="deleteTest" />
-      <option name="TEST_OBJECT" value="method" />
+    <configuration name="All in msvc_partners" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="msvc_partners" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -150,11 +147,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.All in msvc_partners (1)" />
+        <item itemvalue="JUnit.All in msvc_partners" />
         <item itemvalue="JUnit.All in msvc_books (3)" />
         <item itemvalue="JUnit.All in msvc_books (2)" />
         <item itemvalue="JUnit.All in msvc_books (1)" />
-        <item itemvalue="JUnit.BookRepositoryTest" />
-        <item itemvalue="JUnit.BookRepositoryTest.deleteTest" />
       </list>
     </recent_temporary>
   </component>
@@ -186,6 +183,17 @@
       <workItem from="1691293172453" duration="320000" />
       <workItem from="1691393106113" duration="12326000" />
       <workItem from="1691505259461" duration="4201000" />
+      <workItem from="1710719320420" duration="7835000" />
+      <workItem from="1710880796738" duration="11718000" />
+      <workItem from="1711071713888" duration="5603000" />
+      <workItem from="1711155592518" duration="4041000" />
+      <workItem from="1711241775244" duration="12019000" />
+      <workItem from="1711329637639" duration="13474000" />
+      <workItem from="1711504069157" duration="11207000" />
+      <workItem from="1712011876078" duration="3687000" />
+      <workItem from="1712016163296" duration="111000" />
+      <workItem from="1712038401855" duration="5017000" />
+      <workItem from="1712100381455" duration="11305000" />
     </task>
     <servers />
   </component>

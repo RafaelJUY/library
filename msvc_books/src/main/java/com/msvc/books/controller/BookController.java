@@ -25,7 +25,7 @@ import static com.msvc.books.service.convert.entityToDto.BookConverter.*;
 import static com.msvc.books.service.convert.entityToDto.AuthorConverter.*;
 
 @RestController
-@RequestMapping("/books")
+@RequestMapping("/api/books")
 public class BookController {
     @Autowired
     private IBookService bookService;

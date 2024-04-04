@@ -32,15 +32,16 @@ public class PartnerServiceImpl implements IPartnerService {
 
     @Override
     public Optional<Book> registerLoan(Integer idBook, Integer idPartner) {
-        Optional<PartnerEnt> partnerOp = repository.findById(idPartner);
-        if (partnerOp.isPresent()){
-            Book bookMsvc = client.lendBook(idBook);
+        Optional<PartnerEnt> partnerOp = repository.findById(idPartner); //Find partner
+        if (partnerOp.isPresent()){ // If partner exist
+            Book bookMsvc = client.findBookById(idBook); // find book by id
             PartnerEnt partnerEnt = partnerOp.get();
             for (LoanEnt loan:partnerEnt.getLoans()) {
                 if (loan.getIdBook().equals(bookMsvc.getIdBook()) && loan.getReturnDate() == null){
                     throw new LendBookException("IdBook: "+ idBook +" This book was not returned");
                 }
             }
+            bookMsvc = client.lendBook(idBook); // lend book
             LoanEnt loanEnt = new LoanEnt();
             loanEnt.setIdBook(bookMsvc.getIdBook());
             partnerEnt.addLoan(loanEnt);

@@ -20,7 +20,7 @@ import static com.msvc.books.service.convert.entityToDto.BookConverter.*;
 import static com.msvc.books.service.convert.entityToDto.AuthorConverter.*;
 
 @RestController
-@RequestMapping("/authors")
+@RequestMapping("/api/authors")
 public class AuthorController {
     @Autowired
     private IAuthorService authorService;

@@ -18,7 +18,7 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
-@RequestMapping("/partners")
+@RequestMapping("/api/partners")
 public class PartnerController {
     @Autowired
     private IPartnerService partnerService;

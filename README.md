@@ -12,7 +12,6 @@ La comunicación se realiza con openfeign desde msvc_partners a msvc_books.
 - Spring Boot 3
 - Spring Data JPA
 - Base de datos MySQL y H2 para test
-- Documentacion con Swagger: endpoint http://localhost:8001/swagger-ui/index.html
 - Pruebas Unitarias con JUnit5 y Mockit (de momento solo en msvc_books para repository, service y controller).
 - Lombok
 - Maven

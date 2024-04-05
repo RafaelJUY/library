@@ -6,14 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="053a3b23-1f47-4533-93e1-2647f4c279ce" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/msvc_books/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/msvc_books/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/msvc_books/src/main/java/com/msvc/books/controller/AuthorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/msvc_books/src/main/java/com/msvc/books/controller/AuthorController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/msvc_books/src/main/java/com/msvc/books/controller/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/msvc_books/src/main/java/com/msvc/books/controller/BookController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/msvc_books/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/msvc_books/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/msvc_partners/src/main/java/com/msvc/partners/clients/IBookClientRest.java" beforeDir="false" afterPath="$PROJECT_DIR$/msvc_partners/src/main/java/com/msvc/partners/clients/IBookClientRest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/msvc_partners/src/main/java/com/msvc/partners/controller/PartnerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/msvc_partners/src/main/java/com/msvc/partners/controller/PartnerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/msvc_partners/src/main/java/com/msvc/partners/service/impl/PartnerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/msvc_partners/src/main/java/com/msvc/partners/service/impl/PartnerServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/msvc_partners/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/msvc_partners/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -194,6 +188,7 @@
       <workItem from="1712016163296" duration="111000" />
       <workItem from="1712038401855" duration="5017000" />
       <workItem from="1712100381455" duration="11305000" />
+      <workItem from="1712261277088" duration="9839000" />
     </task>
     <servers />
   </component>

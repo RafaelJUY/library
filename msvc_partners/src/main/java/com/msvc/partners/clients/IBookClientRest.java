@@ -10,13 +10,13 @@ import org.springframework.web.bind.annotation.PutMapping;
 @FeignClient(name = "msvc-books", url = "${msvc.books.url}")
 public interface IBookClientRest {
 
-    @PutMapping("/books/lend/{id}")
+    @PutMapping("/api/books/lend/{id}")
     Book lendBook(@PathVariable(name = "id") Integer idBook);
 
-    @PutMapping("/books/return-book/{id}")
+    @PutMapping("/api/books/return-book/{id}")
     Book returnBookLoan(@PathVariable(name = "id") Integer idBook);
 
-    @GetMapping("/books/{id}")
+    @GetMapping("/api/books/{id}")
     Book findBookById(@PathVariable(name = "id") Integer id);
 
 }

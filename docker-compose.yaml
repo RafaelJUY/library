@@ -37,7 +37,14 @@ services:
 #      dockerfile: ./msvc_partners/Dockerfile
     ports:
       - "8002:8002"
-    env_file: ./msvc_partners/.env
+#    env_file: ./msvc_partners/.env
+    environment:
+      PORT: 8002
+      DB_HOST: mysql8:3306
+      DB_DATABASE: msvc_partners
+      DB_USERNAME: root
+      DB_PASSWORD: rafael
+      BOOKS_URL: msvc-books:8001
     networks:
       - spring
     depends_on:
@@ -53,8 +60,14 @@ services:
 #      dockerfile: ./msvc_books/Dockerfile
     ports:
       - "8001:8001"
-    env_file:
-      - ./msvc_books/.env
+#    env_file:
+#      - ./msvc_books/.env
+    environment:
+      PORT: 8001
+      DB_HOST: postgres14:5432
+      DB_DATABASE: msvc_books
+      DB_USERNAME: postgres
+      DB_PASSWORD: rafael
     networks:
       - spring
     depends_on:

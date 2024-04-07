@@ -31,9 +31,10 @@ services:
 
   msvc-pertners:
     container_name: msvc-pertners
-    build:
-      context: ./
-      dockerfile: ./msvc_partners/Dockerfile
+    image: rafaeljuy/partners:latest
+#    build:
+#      context: ./
+#      dockerfile: ./msvc_partners/Dockerfile
     ports:
       - "8002:8002"
     env_file: ./msvc_partners/.env
@@ -46,9 +47,10 @@ services:
 
   msvc-books:
     container_name: msvc-books
-    build:
-      context: ./
-      dockerfile: ./msvc_books/Dockerfile
+    image: rafaeljuy/books:latest
+#    build:
+#      context: ./
+#      dockerfile: ./msvc_books/Dockerfile
     ports:
       - "8001:8001"
     env_file:

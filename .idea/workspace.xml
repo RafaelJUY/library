@@ -7,7 +7,6 @@
     <list default="true" id="053a3b23-1f47-4533-93e1-2647f4c279ce" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/deployment-mysql.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/deployment-mysql.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deployment-postgres.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/deployment-postgres.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -196,7 +195,7 @@
       <workItem from="1712641193251" duration="4367000" />
       <workItem from="1712715773670" duration="2001000" />
       <workItem from="1713064042169" duration="12814000" />
-      <workItem from="1713147871326" duration="4848000" />
+      <workItem from="1713147871326" duration="6620000" />
     </task>
     <servers />
   </component>

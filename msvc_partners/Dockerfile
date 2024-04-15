@@ -61,4 +61,5 @@ ENV PORT $PORT_APP
 
 EXPOSE $PORT
 
+#CMD sleep 12 && java -jar msvc_partners-0.0.1-SNAPSHOT.jar
 CMD ["java","-jar","msvc_partners-0.0.1-SNAPSHOT.jar"]

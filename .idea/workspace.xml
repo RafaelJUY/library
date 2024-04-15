@@ -6,7 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="053a3b23-1f47-4533-93e1-2647f4c279ce" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msvc_books/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/msvc_books/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msvc_partners/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/msvc_partners/Dockerfile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -188,7 +189,13 @@
       <workItem from="1712038401855" duration="5017000" />
       <workItem from="1712100381455" duration="11305000" />
       <workItem from="1712261277088" duration="14411000" />
-      <workItem from="1712446952416" duration="2132000" />
+      <workItem from="1712446952416" duration="4451000" />
+      <workItem from="1712561713977" duration="22000" />
+      <workItem from="1712561815527" duration="3111000" />
+      <workItem from="1712616066835" duration="5320000" />
+      <workItem from="1712641193251" duration="4367000" />
+      <workItem from="1712715773670" duration="2001000" />
+      <workItem from="1713064042169" duration="12814000" />
     </task>
     <servers />
   </component>

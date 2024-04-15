@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: msvc-books
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: msvc-books
+  template:
+    metadata:
+      labels:
+        app: msvc-books
+    spec:
+      containers:
+        - name: books
+          image: rafaeljuy/books:latest
+          ports:
+            - containerPort: 8001
+          env:
+            - name: PORT
+              value: "8001"
+            - name: DB_HOST
+              value: "postgres14:5432"
+            - name: DB_DATABASE
+              value: msvc_books
+            - name: DB_USERNAME
+              value: postgres
+            - name: DB_PASSWORD
+              value: rafael

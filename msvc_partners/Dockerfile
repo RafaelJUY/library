@@ -17,6 +17,9 @@ COPY ./pom.xml /app
 COPY ./$MSVC_NAME/.mvn ./.mvn
 COPY ./$MSVC_NAME/mvnw .
 
+# Dar permisos de ejecución al archivo mvnw
+RUN chmod +x mvnw
+
 # Se copia el pom.xml del microservicio
 COPY ./$MSVC_NAME/pom.xml .
 
@@ -61,5 +64,4 @@ ENV PORT $PORT_APP
 
 EXPOSE $PORT
 
-#CMD sleep 12 && java -jar msvc_partners-0.0.1-SNAPSHOT.jar
 CMD ["java","-jar","msvc_partners-0.0.1-SNAPSHOT.jar"]

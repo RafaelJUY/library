@@ -14,7 +14,7 @@ desarrollados con **Java 17** y **Spring Boot 3**.
   Interactúa con una base de datos PostgreSQL.
 
 
-- Ademas para el proyecto se usó:
+- Además, para el proyecto se usó:
   - Spring Data JPA
   - Base de datos MySQL y H2 para test
   - Pruebas Unitarias con JUnit5 y Mockit (de momento solo en msvc_books para repository, service y controller).
@@ -41,51 +41,64 @@ Ir al repositorio de GitHub y descargar la rama **kubernetes_project**.
 > https://github.com/RafaelJUY/library/tree/kubernetes_project
 
 Se va a encontrar con la siguiente estructura (llamada desde ahora **raíz del proyecto**):
+
 ![raiz de proyecto](resources/raiz-del-proyecto.png)
 
 ### Ejecutamos los siguientes comandos
-- `minikube start`
-- `minikube status`
-
+1. `minikube start`
+2. `minikube status`
+   - Vemos el resultado de ejecutar `minikube status`. Necesitamos todo en `Running`  
+   ![resultado de del comando minikube status](resources/minikube-status.png)
 
 ### Mostrando punto de partida.
 Observamos que de nuestra aplicación no tenemos **Deployments, Pods, Services, Persistent
 Volume (pv) ni Persistent Volume Claim (pvc)**
 
-Ejecutaremos algunos comandos (posicionados sobre la carpeta raíz del proyecto) para crear los siguientes objetos.
+![punto de partida](resources/punto-de-partida.png)
 
 ### Creando Objetos de Kubernetes
-- #### Relacionado a la Base de datos y la persistencia
+Ejecutaremos algunos comandos (posicionados sobre la carpeta raíz del proyecto) para crear los siguientes objetos.
+- #### Relacionado con la Base de datos y la persistencia
 
   1. PersistentVolume
      - `kubectl apply -f .\mysql-pv.yaml -f .\postgres-pv.yaml`
+     - ![PersistentVolume](resources/pv.png)
 
   2. PersistentVolumeClaim
      - `kubectl apply -f .\mysql-pvc.yaml -f .\postgres-pvc.yaml`
+     - ![PersistentVolumeClaim](resources/pvc.png)
 
   3. Deployment de MySQL y PostgreSQL
      - `kubectl apply -f .\deployment-mysql.yaml -f .\deployment-postgres.yaml`
+     - ![Deployment de MySQL y PostgreSQL](resources/deploy-bd.png)
 
   4. Servicios de Mysql y PostgresSQL
      - `kubectl apply -f .\svc-mysql.yaml -f .\svc-postgres.yaml`
+     - ![Servicios de Mysql y PostgresSQL](resources/svc-bd.png)
 
   5. Opcionalmente: Si queremos podemos comprobar el estado de los Pods para ver si las Base de Datos están listas para
      recibir consultas.
      - `kubectl get pods`
      - `kubectl logs NOMBRE-POD`
+     - ![logs de MySQL](resources/logs-mysql.png)
+     - ![logs de PostgreSQL](resources/logs-postgresql.png)
 
-- #### Relacionado a los microservicios de partners y books
+- #### Relacionado con los microservicios de partners y books
   1. Deployment de partners y books
       - `kubectl apply -f .\deployment-partners.yaml -f .\deployment-books.yaml`
+      - ![deploy de los microservicios](resources/deploy-msvc.png)
 
   2. Servicios de Partners y books
      - `kubectl apply -f .\svc-partners.yaml -f .\svc-books.yaml`
+     - ![servicios de los microservicios](resources/servicios-msvc.png)
 
 ### Podemos ver el estado final con todos los objetos creados. 
 Podemos observar que contamos con **Deployments, Pods, Services, Persistent Volume (pv) y Persistent Volume Claim (pvc)**:
 
+![estado final](resources/estado-final.png)
+
 ### Antes de probar la aplicación
-Si bien ya tenemos todos lo objetos creados cuando ejecutamos en la captura anterior `kubectl get all` se podía notar
+Si bien ya tenemos todos los objetos creados cuando ejecutamos en la captura anterior `kubectl get all` se podía notar
 que los servicios de tipo **LoadBalancer** tienen `pending` en la `EXTERNAL-IP`. También podemos verlo con el siguiente
 comando.
 - `kubectl get services`
@@ -127,7 +140,7 @@ Asociar el libro con su autor
 
 - `[PUT] http://192.168.72.114:31571/api/books/assign-authors/{ID-LIBRO}?idsAuthors={ID-AUTOR}`
 
-Buscar el libro por id
+Buscar el libro por ID
 
 - `[GET] http://192.168.72.114:31571/api/books/{ID-LIBRO}`
 

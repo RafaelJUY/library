@@ -34,7 +34,9 @@ desarrollados con **Java 17** y **Spring Boot 3**.
       - `RUN sed -i 's/\r$//' mvnw`
   - Para evitar problemas de permisos al ejecutar en entornos distintos a Windows:
     - `RUN chmod +x mvnw`
-- Servicio LoadBalancer los tenemos presentes en svc-partners.yaml y svc-books.yaml
+- Tipos de Servicos:
+  - **LoadBalancer** presente en en svc-partners.yaml y svc-books.yaml
+  - **ClusterIP** presente en las Bases de Datos.
 ***
 ## Preparando el entorno de ejecución con Minikube
 Ir al repositorio de GitHub y descargar la rama **kubernetes_project**.
@@ -48,6 +50,7 @@ Se va a encontrar con la siguiente estructura (llamada desde ahora **raíz del p
 1. `minikube start`
 2. `minikube status`
    - Vemos el resultado de ejecutar `minikube status`. Necesitamos todo en `Running`  
+   
    ![resultado de del comando minikube status](resources/minikube-status.png)
 
 ### Mostrando punto de partida.
@@ -62,35 +65,43 @@ Ejecutaremos algunos comandos (posicionados sobre la carpeta raíz del proyecto)
 
   1. PersistentVolume
      - `kubectl apply -f .\mysql-pv.yaml -f .\postgres-pv.yaml`
-     - ![PersistentVolume](resources/pv.png)
+     
+     ![PersistentVolume](resources/pv.png)
 
   2. PersistentVolumeClaim
      - `kubectl apply -f .\mysql-pvc.yaml -f .\postgres-pvc.yaml`
-     - ![PersistentVolumeClaim](resources/pvc.png)
+     
+     ![PersistentVolumeClaim](resources/pvc.png)
 
   3. Deployment de MySQL y PostgreSQL
      - `kubectl apply -f .\deployment-mysql.yaml -f .\deployment-postgres.yaml`
-     - ![Deployment de MySQL y PostgreSQL](resources/deploy-bd.png)
+     
+     ![Deployment de MySQL y PostgreSQL](resources/deploy-bd.png)
 
   4. Servicios de Mysql y PostgresSQL
      - `kubectl apply -f .\svc-mysql.yaml -f .\svc-postgres.yaml`
-     - ![Servicios de Mysql y PostgresSQL](resources/svc-bd.png)
+     
+     ![Servicios de Mysql y PostgresSQL](resources/svc-bd.png)
 
   5. Opcionalmente: Si queremos podemos comprobar el estado de los Pods para ver si las Base de Datos están listas para
      recibir consultas.
      - `kubectl get pods`
      - `kubectl logs NOMBRE-POD`
-     - ![logs de MySQL](resources/logs-mysql.png)
-     - ![logs de PostgreSQL](resources/logs-postgresql.png)
+     
+     ![logs de MySQL](resources/logs-mysql.png)
+
+     ![logs de PostgreSQL](resources/logs-postgresql.png)
 
 - #### Relacionado con los microservicios de partners y books
   1. Deployment de partners y books
       - `kubectl apply -f .\deployment-partners.yaml -f .\deployment-books.yaml`
-      - ![deploy de los microservicios](resources/deploy-msvc.png)
+     
+     ![deploy de los microservicios](resources/deploy-msvc.png)
 
   2. Servicios de Partners y books
      - `kubectl apply -f .\svc-partners.yaml -f .\svc-books.yaml`
-     - ![servicios de los microservicios](resources/servicios-msvc.png)
+     
+     ![servicios de los microservicios](resources/servicios-msvc.png)
 
 ### Podemos ver el estado final con todos los objetos creados. 
 Podemos observar que contamos con **Deployments, Pods, Services, Persistent Volume (pv) y Persistent Volume Claim (pvc)**:
@@ -102,12 +113,15 @@ Si bien ya tenemos todos los objetos creados cuando ejecutamos en la captura ant
 que los servicios de tipo **LoadBalancer** tienen `pending` en la `EXTERNAL-IP`. También podemos verlo con el siguiente
 comando.
 - `kubectl get services`
-- ![ip externa pending](resources/external-ip-pending.png)
+
+![ip externa pending](resources/external-ip-pending.png)
 
 Esto se debe al no estar usando un proveedor Cloud. Para poder hacer nuestras pruebas necesitaremos generar mediante un
 comando de minikube la IP externa. El comando es el siguiente:
 - `minikube service msvc-partners –url`
 - `minikube service msvc-books –url`
+
+![ip externa generada](resources/ip-externa-generada.png)
 
 #### Probar aplicacion con Postman
 En la carpeta recursos puede encontrar un archivo **Project_Library.postman_collection.json**
@@ -129,30 +143,37 @@ En este momento ya podremos hacer algunas peticiones con Postman.
 ***
 ## Probando la aplicación
 
-Podemos crear un autor 
-
+Podemos crear un autor
 - `[POST] http://192.168.72.114:31571/api/authors`
 
-Crear un libro
+![crear autor](resources/crear-autor.png)
 
+Crear un libro
 - `[POST] http://192.168.72.114:31571/api/books`
 
-Asociar el libro con su autor
+![crear libro](resources/crear-libro.png)
 
+Asociar el libro con su autor
 - `[PUT] http://192.168.72.114:31571/api/books/assign-authors/{ID-LIBRO}?idsAuthors={ID-AUTOR}`
 
-Buscar el libro por ID
+![asociar libro y autor](resources/asociar-libro-autor.png)
 
+Buscar el libro por ID
 - `[GET] http://192.168.72.114:31571/api/books/{ID-LIBRO}`
 
-Crear un socio
+![buscar libro por ID](resources/buscar-libro-id.png)
 
+Crear un socio
 - `[POST] http://192.168.72.114:30905/api/partners`
 
-Prestar un libro
+![crear socio](resources/crear-socio.png)
 
+Prestar un libro
 - `[PUT] http://192.168.72.114:30905/api/partners/register-loan/{ID-SOCIO}/{ID-LIBRO}`
 
-Buscar el socio donde observaremos el libro prestado
+![prestar libro](resources/prestar-libro.png)
 
+Buscar el socio donde observaremos el libro prestado
 - `[GET] http://192.168.72.114:30905/api/partners/{ID-SOCIO}`
+
+![buscar socio por ID](resources/buscar-socio-id.png)

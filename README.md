@@ -1,5 +1,4 @@
 # Microservicio "library"
-## Ejecución usando Docker, Kubernetes y Minikube
 
 ## Autor: Rafael Enrique Cortez
 

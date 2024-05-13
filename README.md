@@ -44,20 +44,20 @@ Ir al repositorio de GitHub y descargar la rama **kubernetes_project**.
 
 Se va a encontrar con la siguiente estructura (llamada desde ahora **raíz del proyecto**):
 
-![raiz de proyecto](resources/raiz-del-proyecto.png)
+![raiz de proyecto](resources/img-doc/raiz-del-proyecto.png)
 
 ### Ejecutamos los siguientes comandos
 1. `minikube start`
 2. `minikube status`
    - Vemos el resultado de ejecutar `minikube status`. Necesitamos todo en `Running`  
    
-   ![resultado de del comando minikube status](resources/minikube-status.png)
+   ![resultado de del comando minikube status](resources/img-doc/minikube-status.png)
 
 ### Mostrando punto de partida.
 Observamos que de nuestra aplicación no tenemos **Deployments, Pods, Services, Persistent
 Volume (pv) ni Persistent Volume Claim (pvc)**
 
-![punto de partida](resources/punto-de-partida.png)
+![punto de partida](resources/img-doc/punto-de-partida.png)
 
 ### Creando Objetos de Kubernetes
 Ejecutaremos algunos comandos (posicionados sobre la carpeta raíz del proyecto) para crear los siguientes objetos.
@@ -66,47 +66,47 @@ Ejecutaremos algunos comandos (posicionados sobre la carpeta raíz del proyecto)
   1. PersistentVolume
      - `kubectl apply -f .\mysql-pv.yaml -f .\postgres-pv.yaml`
      
-     ![PersistentVolume](resources/pv.png)
+     ![PersistentVolume](resources/img-doc/pv.png)
 
   2. PersistentVolumeClaim
      - `kubectl apply -f .\mysql-pvc.yaml -f .\postgres-pvc.yaml`
      
-     ![PersistentVolumeClaim](resources/pvc.png)
+     ![PersistentVolumeClaim](resources/img-doc/pvc.png)
 
   3. Deployment de MySQL y PostgreSQL
      - `kubectl apply -f .\deployment-mysql.yaml -f .\deployment-postgres.yaml`
      
-     ![Deployment de MySQL y PostgreSQL](resources/deploy-bd.png)
+     ![Deployment de MySQL y PostgreSQL](resources/img-doc/deploy-bd.png)
 
   4. Servicios de Mysql y PostgresSQL
      - `kubectl apply -f .\svc-mysql.yaml -f .\svc-postgres.yaml`
      
-     ![Servicios de Mysql y PostgresSQL](resources/svc-bd.png)
+     ![Servicios de Mysql y PostgresSQL](resources/img-doc/svc-bd.png)
 
   5. Opcionalmente: Si queremos podemos comprobar el estado de los Pods para ver si las Base de Datos están listas para
      recibir consultas.
      - `kubectl get pods`
      - `kubectl logs NOMBRE-POD`
      
-     ![logs de MySQL](resources/logs-mysql.png)
+     ![logs de MySQL](resources/img-doc/logs-mysql.png)
 
-     ![logs de PostgreSQL](resources/logs-postgresql.png)
+     ![logs de PostgreSQL](resources/img-doc/logs-postgresql.png)
 
 - #### Relacionado con los microservicios de partners y books
   1. Deployment de partners y books
       - `kubectl apply -f .\deployment-partners.yaml -f .\deployment-books.yaml`
      
-     ![deploy de los microservicios](resources/deploy-msvc.png)
+     ![deploy de los microservicios](resources/img-doc/deploy-msvc.png)
 
   2. Servicios de Partners y books
      - `kubectl apply -f .\svc-partners.yaml -f .\svc-books.yaml`
      
-     ![servicios de los microservicios](resources/servicios-msvc.png)
+     ![servicios de los microservicios](resources/img-doc/servicios-msvc.png)
 
 ### Podemos ver el estado final con todos los objetos creados. 
 Podemos observar que contamos con **Deployments, Pods, Services, Persistent Volume (pv) y Persistent Volume Claim (pvc)**:
 
-![estado final](resources/estado-final.png)
+![estado final](resources/img-doc/estado-final.png)
 
 ### Antes de probar la aplicación
 Si bien ya tenemos todos los objetos creados cuando ejecutamos en la captura anterior `kubectl get all` se podía notar
@@ -114,17 +114,17 @@ que los servicios de tipo **LoadBalancer** tienen `pending` en la `EXTERNAL-IP`.
 comando.
 - `kubectl get services`
 
-![ip externa pending](resources/external-ip-pending.png)
+![ip externa pending](resources/img-doc/external-ip-pending.png)
 
 Esto se debe al no estar usando un proveedor Cloud. Para poder hacer nuestras pruebas necesitaremos generar mediante un
 comando de minikube la IP externa. El comando es el siguiente:
 - `minikube service msvc-partners –url`
 - `minikube service msvc-books –url`
 
-![ip externa generada](resources/ip-externa-generada.png)
+![ip externa generada](resources/img-doc/ip-externa-generada.png)
 
 #### Probar aplicacion con Postman
-En la carpeta recursos puede encontrar un archivo **Project_Library.postman_collection.json**
+> En la carpeta resources/test-postman puede encontrar un archivo **Project_Library.postman_collection.json**
 donde exporté los end-point, **puede importarlos en su Postman** para no tener que crear desde cero sus consultas a la
 aplicación.
 
@@ -146,34 +146,34 @@ En este momento ya podremos hacer algunas peticiones con Postman.
 Podemos crear un autor
 - `[POST] http://192.168.72.114:31571/api/authors`
 
-![crear autor](resources/crear-autor.png)
+![crear autor](resources/img-doc/crear-autor.png)
 
 Crear un libro
 - `[POST] http://192.168.72.114:31571/api/books`
 
-![crear libro](resources/crear-libro.png)
+![crear libro](resources/img-doc/crear-libro.png)
 
 Asociar el libro con su autor
 - `[PUT] http://192.168.72.114:31571/api/books/assign-authors/{ID-LIBRO}?idsAuthors={ID-AUTOR}`
 
-![asociar libro y autor](resources/asociar-libro-autor.png)
+![asociar libro y autor](resources/img-doc/asociar-libro-autor.png)
 
 Buscar el libro por ID
 - `[GET] http://192.168.72.114:31571/api/books/{ID-LIBRO}`
 
-![buscar libro por ID](resources/buscar-libro-id.png)
+![buscar libro por ID](resources/img-doc/buscar-libro-id.png)
 
 Crear un socio
 - `[POST] http://192.168.72.114:30905/api/partners`
 
-![crear socio](resources/crear-socio.png)
+![crear socio](resources/img-doc/crear-socio.png)
 
 Prestar un libro
 - `[PUT] http://192.168.72.114:30905/api/partners/register-loan/{ID-SOCIO}/{ID-LIBRO}`
 
-![prestar libro](resources/prestar-libro.png)
+![prestar libro](resources/img-doc/prestar-libro.png)
 
 Buscar el socio donde observaremos el libro prestado
 - `[GET] http://192.168.72.114:30905/api/partners/{ID-SOCIO}`
 
-![buscar socio por ID](resources/buscar-socio-id.png)
+![buscar socio por ID](resources/img-doc/buscar-socio-id.png)

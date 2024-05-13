@@ -96,7 +96,7 @@ Podemos observar que contamos con **imágenes, contenedores, volúmenes y redes*
 
 ### Probar aplicacion con Postman
 
-En la carpeta **resources/test-postman** puede encontrar un archivo **Project_Library.postman_collection.json**
+> En la carpeta **resources/test-postman** puede encontrar un archivo **Project_Library.postman_collection.json**
 donde exporté los end-point, **puede importarlos en su Postman** para no tener que crear desde cero sus consultas a la
 aplicación.
 

@@ -102,6 +102,7 @@ Si bien ya tenemos todos los objetos creados cuando ejecutamos en la captura ant
 que los servicios de tipo **LoadBalancer** tienen `pending` en la `EXTERNAL-IP`. También podemos verlo con el siguiente
 comando.
 - `kubectl get services`
+- ![ip externa pending](resources/external-ip-pending.png)
 
 Esto se debe al no estar usando un proveedor Cloud. Para poder hacer nuestras pruebas necesitaremos generar mediante un
 comando de minikube la IP externa. El comando es el siguiente:

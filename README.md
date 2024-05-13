@@ -3,7 +3,7 @@
 ## Autor: Rafael Enrique Cortez
 
 ***
-## Para probar la aplicacion
+## Para probar la aplicación
 Cuenta con las siguientes instrucciones
 
 ### Mendiante Docker, Kubernetes y Minikube
